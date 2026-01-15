@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #0d6efd;
+  --secondary-color: #20c997;
+  --hover-color: #003a91;
+  --body-color: #f8f9fa;
+  --section-bg-color: #e9ecef;
+  --red-color: #d41111;
+  --primary-txt: #212529;
+  --muted-txt: #6c757d;
+}
+body {
+  background: var(--body-color);
+}
+h1,
+h2,
+h3,
+h4 {
+  color: var(--primary-color);
+}
+.bg-nav {
+  background: var(--primary-color);
+  color: var(--body-color);
+}
+.nav-link {
+  margin-right: 0.5rem;
+}
+.nav-link:hover,
+.nav-link.active {
+  background: var(--secondary-color) !important;
+  color: var(--body-color);
+}
+.hero-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url("../images/hero-bg.png") center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+}
+.book_btn {
+  background: var(--primary-color);
+  color: var(--body-color);
+  text-decoration: none;
+  padding: 0.5rem 0.7rem;
+  margin-right: 0.5rem;
+}
+.book_btn:hover {
+  background: var(--hover-color);
+  color: var(--body-color);
+  text-decoration: none;
+  padding: 0.5rem 0.7rem;
+  margin-right: 0.5rem;
+}
+.emergency_btn {
+  background: var(--red-color);
+  color: var(--body-color);
+  text-decoration: none;
+  padding: 0.5rem 0.7rem;
+  margin-right: 0.5rem;
+}
+.prim-icon {
+  color: var(--secondary-color);
+}
+.service_btn {
+  background: var(--primary-color);
+  color: var(--body-color);
+  text-decoration: none;
+  padding: 0.5rem 0.7rem;
+}
+.service_btn:hover {
+  background: var(--secondary-color);
+  color: var(--body-color);
+  text-decoration: none;
+  padding: 0.5rem 0.7rem;
+}
+.section-bg {
+  background: var(--section-bg-color);
+}
+.submit_btn {
+  background: var(--primary-color);
+  color: var(--body-color);
+  text-decoration: none;
+  padding: 0.5rem 0.7rem;
+  outline: none;
+  border: none;
+}
+.submit_btn:hover {
+  background: var(--secondary-color);
+  color: var(--body-color);
+  text-decoration: none;
+  padding: 0.5rem 0.7rem;
+  outline: none;
+  border: none;
+}
+.error {
+  color: var(--red-color);
+}
+.responsive-map {
+  width: 100%;
+  margin-top: 1rem;
+}
+@media (max-width: 430px) {
+  .responsive-map {
+    width: 250px;
+  }
+  .book_btn {
+    display: block;
+    width: 100%;
+  }
+  .emergency_btn {
+    display: block;
+    margin-top: 1rem;
+    width: 100%;
+  }
+}
